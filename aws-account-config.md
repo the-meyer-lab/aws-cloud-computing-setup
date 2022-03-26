@@ -1,6 +1,6 @@
-# aws-cloud-computing-setup
+# AWS Account Setup and Configuration
 ## Purpose
- The purpose of this repository is to describe the process for configuring Amazon Web Services accounts and infrastructure for the first time.
+ The purpose of this readme is to help you setup and configure a new AWS account and/or instance.
 
 ## AWS Account setup
 *(skip if you already have an AWS account and key pair)*

@@ -2,6 +2,9 @@
 ## Purpose
 The purpose of this readme is to help you configure a new AWS instance from scratch.
 
+## Requirements
+Proceed to these steps only once you have launched an AWS instance. See details [here](https://github.com/the-meyer-lab/aws-cloud-computing-setup/blob/main/aws-account-config.md).
+
 ## 1. Connect to instance from your command line
 If you have a Max or a Linux machine, great open your terminal.
 If you have a Windows machine, follow instructions on installing Bash terminal [here](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
