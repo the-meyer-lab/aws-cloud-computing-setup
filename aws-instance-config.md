@@ -6,7 +6,7 @@ The purpose of this readme is to help you configure a new AWS instance from scra
 Proceed to these steps only once you have launched an AWS instance. See details [here](https://github.com/the-meyer-lab/aws-cloud-computing-setup/blob/main/aws-account-config.md).
 
 ## 1. Connect to instance from your command line
-If you have a Max or a Linux machine, great open your terminal.
+If you have a Mac or a Linux machine, great open your terminal.
 If you have a Windows machine, follow instructions on installing Bash terminal [here](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
 
 - EC2 > Instances > select desired instance that has been launched and click "Connect"
@@ -21,7 +21,7 @@ If you have a Windows machine, follow instructions on installing Bash terminal [
 	ssh -i "G:\My Drive\Meyer Lab\AWS\yuri-malina.pem" ec2-c2-54-219-137-86.us-west-1.compute.amazonaws.com -l ubuntu
 	```
 ### a. Quality of life (optional tools)
-When working with a remote server, if you are not entirely comfortable with the command line interface, navigating around, manipulating files, and creating / editing text files with vim, nano or other CLI text editor, it is highly recommend to install some tools to improve your workflow:
+When working with a remote server, if you are not entirely comfortable with the command line interface, navigating around, manipulating files, and creating / editing text files with vim, nano or other CLI text editor, it is highly recommended to install some tools to improve your workflow:
 - SFTP / FTP Client: *Allows you to view your local and remote file structure in a GUI, allowing for easy drag and drop file transfers.*
 	- Windows:  [WinSCP](https://winscp.net/eng/index.php) is a good choice but there are others. 
 	- Mac: [Cyberduck](https://cyberduck.io/)

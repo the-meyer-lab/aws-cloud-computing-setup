@@ -8,7 +8,7 @@
 ### 1. Set up AWS account (if applicable)
 Visit https://aws.amazon.com/ to create a new account if the lab does not have an active acccount.
   
-### 2. Create key pair for that will be used to access remote instances
+### 2. Create key pair that will be used to access remote instances
 *(This is only required once for each user, can only be performed by AWS administrator and must be kept private.*)
 - EC2 > Key pairs >
     - Enter name of user key pair will be granted to
@@ -46,6 +46,9 @@ Click [here](https://aws.amazon.com/ebs/pricing/) for detailed pricing and perfo
 - If desired instance is already configured, select from list and launch. If not configure new instance with following steps:
     - EC2 > Instances > Launch Instance > 
         - Select operating system / image: recommend Deep Learning AMI (Ubuntu 18.XX) Version XX.XX OR an available AMI from the lab for your specific application.
+          - For nanopore sequencing applications, recommend using the following image: ami-07ac92c40cd437ed0
+          - ![img.png](img.png)
+          - This image has been pre-built using this [script](https://github.com/the-meyer-lab/aws-cloud-computing-setup/blob/main/AMI%20Scripts/nanopore-analysis-ami.sh) for nanopore data processing and analysis applications.
         - Select instance type:
             - For compute intensive workloads (e.g. base calling), recommend: g4dn.metal @ ~$9/hr
             >Note: When configuring a g4dn.metal instance for the first time, AWS default commercial accounts have a quota of 0 for these types of instances which will cause an error when attempting to launch the instance. In order to resolve this, visit Service Quotas > EC2 > request quota increase for "All G and VT Spot Instance Requests" up to '96' (which is the amount required by a g4dn.metal instance). 
